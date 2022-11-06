@@ -1,0 +1,13 @@
+.sign-up-title-box {
+  display: flex;
+  justify-content: center;
+}
+.sign-up-title-box .sign-up-title-img-box {
+  margin: 1.75rem 0;
+  width: 8.75rem;
+  height: 1.063rem;
+}
+.sign-up-title-box .sign-up-title-img-box img {
+  width: inherit;
+  height: inherit;
+}

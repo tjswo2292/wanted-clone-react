@@ -1,0 +1,21 @@
+.hbg-menu-container {
+  z-index: 100;
+  position: absolute;
+  top: 3rem;
+  left: 22rem;
+  width: 215px;
+  background-color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.hbg-menu-container .hbg-menu-item-box {
+  text-align: left;
+}
+.hbg-menu-container .hbg-menu-item-box .hbg-menu-item:hover {
+  background-color: rgb(252, 251, 251);
+  color: #36f;
+}
+.hbg-menu-container .hbg-menu-item-box .hbg-menu-item span {
+  display: inline-block;
+  padding: 0.875rem;
+}

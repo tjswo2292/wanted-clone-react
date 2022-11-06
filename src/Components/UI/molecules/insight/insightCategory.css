@@ -1,0 +1,79 @@
+:root {
+  --border-ra: 50%;
+  --border-color: #e1e2e3;
+}
+.insight-category-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.insight-category-wrap .insight-prev-btn,
+.insight-next-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #e1e2e3;
+  border-radius: var(--border-ra);
+}
+.insight-category-wrap .insight-next-btn {
+  margin-right: 8px;
+}
+.insight-category-wrap .insight-prev-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.insight-category-wrap .insight-next-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.insight-category-wrap .insight-category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.insight-category-wrap .insight-category-container .insight-category-item {
+  white-space: nowrap;
+  border: 1px solid #e1e2e3;
+  border-radius: 1.563rem;
+}
+.insight-category-wrap
+  .insight-category-container
+  .insight-category-item:not(:last-child) {
+  margin-right: 5px;
+}
+.insight-category-wrap
+  .insight-category-container
+  .insight-category-item
+  button
+  span {
+  display: block;
+  padding: 0.563rem 1.375rem;
+  font-size: 0.938rem;
+  font-weight: bold;
+  color: #888;
+}
+.insight-category-wrap .insight-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.insight-category-wrap .insight-more-container .insight-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 0.25rem;
+}
+.insight-category-wrap .insight-more-container .insight-more-btn button {
+  width: 100%;
+  height: 100%;
+}

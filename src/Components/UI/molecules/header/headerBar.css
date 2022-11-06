@@ -1,0 +1,16 @@
+.header-bar-container {
+  display: flex;
+  font-weight: bold;
+}
+.header-bar-container .hbg-icon-box {
+  font-size: 20px;
+  margin-right: 0.938rem;
+}
+.header-bar-container .logo-img-box {
+  width: 5rem;
+  height: 1.25rem;
+}
+.header-bar-container .logo-img-box img {
+  width: 100%;
+  height: 100%;
+}

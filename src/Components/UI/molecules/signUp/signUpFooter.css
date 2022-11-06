@@ -1,0 +1,22 @@
+.sign-up-footer .service {
+  margin-bottom: 0.938rem;
+}
+.sign-up-footer .service span {
+  font-weight: 600;
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+}
+.sign-up-footer .service span {
+  margin-right: 10px;
+}
+.sign-up-footer p {
+  margin-bottom: 1.875rem;
+  color: #888;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.sign-up-footer select {
+  font-size: 0.813rem;
+  width: 5.813rem;
+  height: 2rem;
+}

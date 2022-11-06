@@ -1,0 +1,17 @@
+.header-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-menu-container .menu-item .menu-name {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.menu-item .item-link {
+  display: block;
+  padding: 0.938rem;
+}
+/* hover시 글자 커지는거 고치기 */
+.header-menu-container .menu-item:hover {
+  border-bottom: 0.156rem solid #e1e2e3;
+}

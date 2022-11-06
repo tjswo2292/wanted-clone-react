@@ -1,0 +1,105 @@
+:root {
+  --label-color: #888;
+  --label-margin-top: 1.063rem;
+  --label-margin-bottom: 0.438rem;
+
+  --input-margin-bottom: 0.5rem;
+}
+.new-sign-up-form {
+  margin-top: 75px;
+}
+.new-sign-up-form form label {
+  display: block;
+  text-align: left;
+  margin-top: var(--label-margin-top);
+  margin-bottom: 0.5rem;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #888;
+}
+.new-sign-up-form form input {
+  display: block;
+  width: 100%;
+  height: 3.125rem;
+  margin-bottom: 0.5rem;
+  padding: 0 0.75rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 0.313rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+.new-sign-up-form form input::placeholder {
+  color: #ccc;
+}
+.new-sign-up-form form #phoneNumberSelect {
+  width: 100%;
+  height: 3.125rem;
+  padding: 0 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 0.313rem;
+}
+.new-sign-up-form form .certification-number-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 0.625rem;
+  margin: 0.625rem 0;
+}
+.new-sign-up-form form .certification-number-box button {
+  border-radius: 0.313rem;
+  background-color: #f2f4f7;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ccc;
+}
+.new-sign-up-form form #new-certification-input {
+  background-color: #f2f4f7;
+}
+
+/* input type:number 화살표 없애기 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.new-sign-up-form form .pw-input-warning {
+  text-align: left;
+  margin-bottom: 2.188rem;
+  line-height: 1.125rem;
+  font-size: 0.813rem;
+  color: #888;
+}
+
+.new-sign-up-form form .agree-wrap input[type="checkbox"] {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0;
+}
+.new-sign-up-form form .agree-wrap label {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+}
+.new-sign-up-form form .agree-wrap .agree-box {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.new-sign-up-form form .agree-wrap .agree-box span {
+  color: #888;
+}
+.new-sign-up-form form .agree-wrap .agree-box:nth-child(4),
+.agree-box:nth-child(5) {
+  display: flex;
+  justify-content: space-between;
+}
+.new-sign-up-form form .agree-wrap .agree-box .id-agree-box {
+  display: flex;
+  align-items: center;
+}
+.new-sign-up-form form .agree-wrap .agree-box .info-agree-box {
+  display: flex;
+  align-items: center;
+}

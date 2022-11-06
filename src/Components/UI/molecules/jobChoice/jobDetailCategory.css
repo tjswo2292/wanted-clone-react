@@ -1,0 +1,73 @@
+:root {
+  --border-ra: 50%;
+  --border-color: #e1e2e3;
+}
+.job-category-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.job-category-wrap .job-prev-btn,
+.job-next-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #e1e2e3;
+  border-radius: var(--border-ra);
+}
+.job-category-wrap .job-next-btn {
+  margin-right: 8px;
+}
+.job-category-wrap .job-prev-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.job-category-wrap .job-next-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.job-category-wrap .job-category-container {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.job-category-wrap .job-category-container .job-category-item {
+  white-space: nowrap;
+  border: 1px solid #e1e2e3;
+  border-radius: 1.563rem;
+}
+.job-category-wrap .job-category-container .job-category-item:not(:last-child) {
+  margin-right: 5px;
+}
+.job-category-wrap .job-category-container .job-category-item button span {
+  display: block;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.813rem;
+}
+.job-category-wrap .job-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 50%;
+}
+.job-category-wrap .job-more-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}

@@ -1,0 +1,27 @@
+.img-btn-left {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 126px;
+  left: 285px;
+  width: 30px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.img-btn-rigth {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 126px;
+  right: 285px;
+  width: 30px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+}

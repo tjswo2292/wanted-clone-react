@@ -1,0 +1,13 @@
+.img-slide-wrap {
+  overflow: hidden;
+}
+.img-slide-wrap .main-img-slide {
+  display: flex;
+  justify-content: center;
+}
+.main-img-slide .img-slide-item {
+  width: 66.25rem;
+}
+.main-img-slide .img-slide-item:not(:last-child) {
+  margin-right: 1.563rem;
+}

@@ -1,0 +1,13 @@
+.new-sign-up-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+}
+.new-sign-up-title-container #close-sign-up-btn {
+  font-size: 1.063rem;
+}
+.new-sign-up-title-container span:nth-child(2) {
+  font-size: 1.125rem;
+  font-weight: bold;
+}

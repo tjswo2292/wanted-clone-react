@@ -1,0 +1,181 @@
+.sign-up-title {
+  margin: 1.172rem 0;
+}
+.sign-up-title h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.sign-up-desc {
+  margin: 0.778rem 0;
+}
+.sign-up-desc h4 {
+  line-height: 1.375rem;
+  font-size: 0.938rem;
+  color: #888;
+}
+.sign-up-form form {
+  text-align: left;
+}
+.sign-up-form form label {
+  display: inline-block;
+  margin-top: 1.063rem;
+  margin-bottom: 0.438rem;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #888;
+}
+.sign-up-form form #emailInput {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 0.313rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.sign-up-form form #emailInput::placeholder {
+  font-weight: 400;
+  color: #e1e2e3;
+}
+.sign-up-form form #emailSubmitBtn {
+  display: block;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+  width: 100%;
+  height: 3rem;
+  background-color: #f2f4f7;
+  border-radius: 1.563rem;
+  cursor: default;
+}
+.sign-up-form form #loginPosible {
+  display: block;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+  width: 100%;
+  height: 3rem;
+  background-color: #36f;
+  border-radius: 1.563rem;
+  font-weight: bold;
+  color: #fff;
+}
+.sign-up-form form #emailSubmitBtn span {
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #ccc;
+}
+.sign-up-form form div::after {
+  display: flex;
+  justify-content: center;
+  content: "또는";
+  font-size: 0.75rem;
+  color: #939393;
+  margin-top: 5px;
+  margin-bottom: 0.938rem;
+}
+.sign-up-form .social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-up-form .social-list .social-kakao-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #fee500;
+}
+.sign-up-form .social-list .social-kakao-img-box img {
+  display: block;
+  width: 1.438rem;
+  height: 1.438rem;
+}
+.sign-up-form .social-list li:nth-child(1) span {
+  margin-top: 0.5rem;
+  font-size: 0.688rem;
+  color: #888;
+}
+/* facebook */
+.sign-up-form .social-list .social-face-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: rgb(24, 119, 242);
+}
+.sign-up-form .social-list .social-face-img-box img {
+  display: block;
+  width: 1.625rem;
+  height: 1.625rem;
+}
+.sign-up-form .social-list li:nth-child(2) span {
+  margin-top: 0.5rem;
+  font-size: 0.688rem;
+  color: #888;
+}
+/* Google */
+.sign-up-form .social-list .social-google-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.sign-up-form .social-list .social-google-img-box img {
+  display: block;
+  width: 1.625rem;
+  height: 1.625rem;
+}
+.sign-up-form .social-list li:nth-child(3) span {
+  margin-top: 0.5rem;
+  font-size: 0.688rem;
+  color: #888;
+}
+/* Apple */
+.sign-up-form .social-list .social-apple-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 50%;
+  background-color: #000;
+}
+.sign-up-form .social-list .social-apple-img-box img {
+  display: block;
+  width: 1.625rem;
+  height: 1.625rem;
+}
+.sign-up-form .social-list li:nth-child(4) span {
+  margin-top: 0.5rem;
+  font-size: 0.688rem;
+  color: #888;
+}
+
+.sign-up-form hr {
+  border: 1px solid #e1e2e3;
+  margin: 2.5rem 0;
+}
+
+/* show warning */
+.sign-up-form .show-warning {
+  color: #fe415c;
+  font-weight: 400;
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.sign-up-form .close-warning {
+  display: none;
+}
+.red-outline {
+  outline-color: #fe415c;
+  outline-width: 0.1em;
+}

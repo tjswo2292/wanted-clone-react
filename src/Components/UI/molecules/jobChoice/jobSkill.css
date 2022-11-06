@@ -1,0 +1,105 @@
+:root {
+  --font-size: 0.875rem;
+}
+.down-icon-box {
+  display: flex;
+  align-items: center;
+}
+.job-skill-wrap {
+  margin-top: 2.5rem;
+  margin-bottom: 1.563rem;
+  border-bottom: 1px solid #e1e2e3;
+}
+.job-skill-wrap .skill-choice-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.875rem;
+}
+.job-skill-wrap .skill-choice-container .skill-btn {
+  display: flex;
+}
+.job-skill-wrap .skill-choice-container .skill-btn .location-btn-box,
+.career-btn-box,
+.skill-stack-btn-box,
+.answer-btn-box {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 0.313rem;
+}
+.job-skill-wrap .skill-choice-container .skill-btn .location-btn-box,
+.career-btn-box {
+  margin-right: 10px;
+}
+.job-skill-wrap .skill-choice-container .skill-btn .location-btn-box,
+.career-btn-box,
+.skill-stack-btn-box,
+.answer-btn-box button {
+  padding: 0 0.938rem;
+}
+.job-skill-wrap
+  .skill-choice-container
+  .skill-btn
+  .location-btn-box
+  button
+  span {
+  font-size: 0.875rem;
+}
+.skill-btn .location-btn-box button span:first-child {
+  margin-right: 0.938rem;
+}
+.skill-btn .career-btn-box button span:first-child {
+  margin-right: 0.938rem;
+}
+.skill-btn .career-btn-box button .career-choice span {
+  margin-right: 0.313rem;
+}
+.skill-btn .skill-stack-btn-box button span:first-child {
+  margin-right: 0.938rem;
+}
+.skill-btn .answer-btn-box button span:first-child {
+  margin-right: 0.938rem;
+}
+.answer-btn-box span {
+  margin: 0 0.938rem;
+  font-size: 0.875rem;
+}
+.answer-btn-box .down-icon-box {
+  margin-right: 0.938rem;
+}
+.job-skill-wrap
+  .skill-choice-container
+  .skill-btn
+  .location-btn-box
+  button
+  span:last-child {
+  font-weight: bold;
+  color: #36f;
+}
+.job-skill-wrap .skill-choice-container .skill-btn .career-btn-box button {
+  display: flex;
+}
+.job-skill-wrap
+  .skill-choice-container
+  .skill-btn
+  .career-btn-box
+  .career-choice {
+  display: flex;
+}
+.job-skill-wrap
+  .skill-choice-container
+  .skill-btn
+  .career-btn-box
+  .career-choice
+  span {
+  color: #36f;
+  font-weight: bold;
+}
+.job-skill-wrap
+  .skill-choice-container
+  .skill-btn
+  .skill-stack-btn-box
+  .skill-stack-box {
+  display: flex;
+}

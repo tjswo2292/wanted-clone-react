@@ -1,0 +1,26 @@
+.header-aside-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-aside-container .aside-item .aside-box {
+  display: flex;
+  align-items: center;
+  margin: 0 0.625rem;
+  font-size: 1.125rem;
+}
+.header-aside-container .aside-item:nth-child(3) {
+  margin-left: 2.5rem;
+  border: 1px solid #e1e2e3;
+  border-radius: 0.938rem;
+}
+.header-aside-container .aside-sign-up-btn button {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.header-aside-container .aside-item span {
+  display: block;
+  padding: 0.5rem 0.625rem;
+  font-size: 0.813rem;
+  color: #666;
+}

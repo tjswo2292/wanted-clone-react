@@ -1,0 +1,64 @@
+:root {
+  --btn-size: 2.25rem;
+  --btn-border-color: #eee;
+  --btn-border-radius: 50%;
+  --bnt-opacity: 0.7;
+}
+
+.show-all-position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.75rem;
+}
+.show-all-position .left-btn-box,
+.right-btn-box {
+  width: var(--btn-size);
+  height: var(--btn-size);
+  border-radius: var(--btn-border-radius);
+}
+.show-all-position .left-btn-box button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: var(--bnt-opacity);
+  border: 1px solid var(--btn-border-color);
+  border-radius: var(--btn-border-radius);
+}
+.show-all-position .right-btn-box button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: var(--bnt-opacity);
+  border: 1px solid var(--btn-border-color);
+  border-radius: var(--btn-border-radius);
+}
+.show-all-position .all-position-title {
+  display: flex;
+  flex-direction: column;
+}
+.show-all-position .all-position-title span:nth-child(1) {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+.show-all-position .all-position-title span:nth-child(2) {
+  font-size: 0.938rem;
+  color: #767676;
+}
+.show-all-position .all-position-title .title-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.show-all-position .all-position-title .title-box span {
+  margin-right: 0.313rem;
+}
+.show-all-position .all-position-title .title-box .que-icon {
+  width: 1.375rem;
+  height: 1.375rem;
+  color: #767676;
+}
