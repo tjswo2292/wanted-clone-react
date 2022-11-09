@@ -3,7 +3,18 @@ import { useState, useEffect, useReducer } from "react";
 import "./newSignUpForm.css";
 
 const checkReducer = (state, action) => {
-	return { age: action.age, id: action.id, info: action.info };
+	switch (action.type) {
+		case "AGE_CHECKED":
+			return { age: action.age, id: state.id, info: state.info };
+		case "ID_CHECKED":
+			return { age: state.age, id: action.id, info: state.info };
+		case "INFO_CHECKED":
+			return { age: state.age, id: state.id, info: action.info };
+		case "ALL_CHECKED":
+			return { age: action.age, id: action.val, info: action.val };
+		default:
+			return { age: action.age, id: action.id, info: action.info };
+	}
 };
 
 const NewSignUpForm = () => {
@@ -19,24 +30,34 @@ const NewSignUpForm = () => {
 	useEffect(() => {
 		setIsAllChecked(ageCheck && idCheck && infoCheck);
 	}, [ageCheck, idCheck, infoCheck]);
+
 	function detectAgeCheck(e) {
 		dispatchIsChecked({
-			...isChecked,
+			type: "AGE_CHECKED",
 			age: e.target.checked,
 		});
 	}
 	function detectIdCheck(e) {
 		dispatchIsChecked({
-			...isChecked,
+			type: "ID_CHECKED",
 			id: e.target.checked,
 		});
 	}
 	function detectInfoCheck(e) {
 		dispatchIsChecked({
-			...isChecked,
+			type: "INFO_CHECKED",
 			info: e.target.checked,
 		});
 	}
+
+	function a(e) {
+		dispatchIsChecked({
+			type: "ALL_CHECKED",
+			val: e.target.checked,
+		});
+	}
+
+	console.log(isAllChecked);
 	return (
 		<div className="new-sign-up-form">
 			<form>
@@ -80,7 +101,12 @@ const NewSignUpForm = () => {
 				</p>
 				<div className="agree-wrap">
 					<div className="agree-box">
-						<input id="all-agree" type="checkbox" />
+						<input
+							id="all-agree"
+							type="checkbox"
+							onChange={a}
+							checked={isAllChecked}
+						/>
 						<label htmlFor="all-agree">전체 동의</label>
 					</div>
 					<hr />

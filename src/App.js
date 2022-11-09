@@ -8,6 +8,7 @@ import MainPage from "./Components/pages/MainPage";
 import JobPosting from "./Components/pages/JobPosting";
 import SignUpPage from "./Components/pages/SignUpPage";
 import NewSignUpPage from "./Components/pages/NewSignUpPage";
+import RecruitPage from "./Components/pages/RecruitPage";
 
 import Header from "./Components/UI/organisms/Header";
 
@@ -37,21 +38,22 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
-  return (
-    <div className="App">
-      <GlobalStyle />
-      <Routes>
-        <Route path="/" element={<Header />}>
-          <Route path="" element={<MainPage />} />
-          <Route path="jobposting" element={<JobPosting />} />
-        </Route>
-        <Route path="/newsignup" element={<NewSignUpPage />} />
-        <Route path="/signup" element={<SignUpPage />} />
-        <Route path="/newsignup" element={<NewSignUpPage />} />
-        {/* <Route path="*" element={<NotFound />} /> */}
-      </Routes>
-    </div>
-  );
+	return (
+		<div className="App">
+			<GlobalStyle />
+			<Routes>
+				<Route path="/" element={<Header />}>
+					<Route path="" element={<MainPage />} />
+					<Route path="jobposting" element={<JobPosting />} />
+					<Route path="recruit" element={<RecruitPage />} />
+				</Route>
+				<Route path="/newsignup" element={<NewSignUpPage />} />
+				<Route path="/signup" element={<SignUpPage />} />
+				<Route path="/newsignup" element={<NewSignUpPage />} />
+				{/* <Route path="*" element={<NotFound />} /> */}
+			</Routes>
+		</div>
+	);
 }
 
 export default App;

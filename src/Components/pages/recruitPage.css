@@ -1,0 +1,196 @@
+.main-container {
+	display: flex;
+	width: 66.25rem;
+	margin: 0 auto;
+}
+.main-container .apply-img {
+	width: 43.75rem;
+	height: 30.625rem;
+	border-radius: 0.25rem;
+}
+.main-container .apply-img .apply-img-box {
+	width: 42.125rem;
+	height: 29.438rem;
+}
+.main-container .apply-img .apply-img-box img {
+	display: block;
+	width: inherit;
+	height: inherit;
+}
+.money {
+	width: 21.25rem;
+	height: 18.75rem;
+	padding: 1.25rem;
+	margin-left: 1.25rem;
+	border: 1px solid #e1e2e3;
+	border-radius: 0.25rem;
+}
+.main-container .money .money-title-box {
+	display: flex;
+	justify-content: space-between;
+}
+.money-container .money-table {
+	text-align: left;
+	width: 100%;
+	margin-top: 20px;
+}
+.money-container .money-bookmark {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.875rem;
+	margin-bottom: 0.625rem;
+	width: 18.5rem;
+	height: 3rem;
+	border: 1px solid #36f;
+	border-radius: 1.563rem;
+}
+.money-container .money-bookmark span {
+	color: #36f;
+}
+.money-container .money-apply {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 18.5rem;
+	height: 3rem;
+	border: 1px solid #36f;
+	border-radius: 1.563rem;
+	background-color: #36f;
+	color: #fff;
+	font-weight: bold;
+}
+
+.money-container .money-like-icon-box .like-icon-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.5rem;
+}
+.money-container .money-like-icon-box .like-icon-list {
+	width: 4.188rem;
+	height: 1.875rem;
+	border: 1px solid #e1e2e3;
+	border-radius: 0.938rem;
+}
+.money-container .money-like-icon-box .like-icon-list i {
+	margin-right: 0.5rem;
+	font-size: 0.875rem;
+}
+.money-container .money-like-icon-box .like-icon-list span {
+	font-size: 0.875rem;
+}
+.apply-desc .company-job-title {
+	margin-top: 1.5rem;
+	margin-bottom: 0.625rem;
+	text-align: left;
+}
+.apply-desc .company-job-title span {
+	font-size: 1.375rem;
+}
+.apply-desc .company-job-desc {
+	margin-bottom: 0.625rem;
+	text-align: left;
+}
+.apply-desc .company-job-title span:nth-child(1) {
+	font-size: 1.375rem;
+	font-weight: bold;
+}
+.apply-desc .company-job-desc span:nth-child(2) {
+	padding: 0 0.313rem;
+	margin: 0 0.313rem;
+	font-size: 0.6rem;
+	border: 1px solid #00aead;
+	line-height: 1.8;
+	color: #00aead;
+}
+.hashtag {
+	display: flex;
+}
+.hashtag li {
+	padding: 0.563rem 0.875rem;
+	margin-right: 0.625rem;
+	border-radius: 1.563rem;
+	background-color: #f3f5f8;
+}
+.hashtag span {
+	font-size: 0.75rem;
+}
+.desc-wrap {
+	margin-top: 1.875rem;
+	line-height: 1.7;
+	text-align: left;
+}
+.skill-stack {
+	margin-top: 20px;
+	font-weight: bold;
+}
+.skill-stack .skill-stack-list {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.938rem;
+}
+.skill-stack .skill-stack-list li {
+	padding: 0.563rem 0.875rem;
+	border-radius: 1.25rem;
+	background-color: #e4f4ec;
+	font-size: 0.75rem;
+}
+.company-follow {
+	margin-top: 1.5rem;
+	padding: 1.25rem;
+	border: 1px solid #e1e2e3;
+}
+.company-follow .company-follow-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.company-follow .company-follow-box .company-name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.company-follow .company-follow-box .follow-icon {
+	padding: 0.625rem 1.688rem;
+	border: 1px solid #e1e2e3;
+	border-radius: 1.563rem;
+	color: #36f;
+}
+.company-follow .company-follow-box .name-span {
+	display: flex;
+	flex-direction: column;
+}
+.warning-header {
+	padding: 1.563rem 1.875rem;
+	margin-top: 1.25rem;
+	margin-bottom: 1.5rem;
+	background-color: #f8f8fa;
+}
+.warning-header .warning-header-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.warning-header .warning-header-box .warning-desc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.75rem;
+}
+.warning-header .warning-header-box .warning-desc .mark {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-right: 0.75rem;
+	border: 1px solid;
+	border-radius: 50%;
+}
+.search-position {
+	margin-top: 6rem;
+	margin-bottom: 1.25rem;
+	font-size: 1.25rem;
+	font-weight: bold;
+}

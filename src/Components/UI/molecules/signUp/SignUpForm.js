@@ -44,9 +44,7 @@ const SignUpForm = () => {
 					type="email"
 					placeholder="이메일을 입력해주세요."
 				/>
-				{validate ? (
-					""
-				) : (
+				{!validate && (
 					<span className="show-warning">올바른 이메일을 입력해주세요</span>
 				)}
 				<Link to="/newsignup">

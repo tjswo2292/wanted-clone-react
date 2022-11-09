@@ -9,20 +9,22 @@ import "./header.css";
 import { Outlet } from "react-router-dom";
 
 const Header = () => {
-  const [showModal, setShowModal] = useState(false);
+	const [showModal, setShowModal] = useState(false);
 
-  return (
-    <div className="header">
-      <div className="header-container">
-        <HeadeBar setShowModal={setShowModal} />
-        <HeaderMenu />
-        <HeaderAside />
-      </div>
-      {showModal === true ? <HbgMenuList setShowModal={setShowModal} /> : ""}
+	return (
+		<>
+			<div className="header">
+				<div className="header-container">
+					<HeadeBar setShowModal={setShowModal} />
+					<HeaderMenu />
+					<HeaderAside />
+				</div>
+				{showModal === true ? <HbgMenuList setShowModal={setShowModal} /> : ""}
 
-      <Outlet></Outlet>
-    </div>
-  );
+				<Outlet></Outlet>
+			</div>
+		</>
+	);
 };
 
 export default Header;
