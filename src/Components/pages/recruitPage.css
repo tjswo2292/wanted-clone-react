@@ -18,7 +18,7 @@
 	height: inherit;
 }
 .money {
-	position: fixed;
+	position: sticky;
 	top: 4rem;
 	width: 21.25rem;
 	height: 18.75rem;
@@ -131,6 +131,7 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 0.938rem;
+	margin-bottom: 50px;
 }
 .skill-stack .skill-stack-list li {
 	padding: 0.563rem 0.875rem;
@@ -195,4 +196,28 @@
 	margin-bottom: 1.25rem;
 	font-size: 1.25rem;
 	font-weight: bold;
+}
+#map {
+	width: inherit;
+	height: 15.875rem;
+}
+.skill-stack-list-bottom {
+	margin-bottom: 30px;
+	border: 1px solid #eee;
+}
+.map-desc table {
+	width: 100%;
+	text-align: left;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+}
+.map-desc table tr th {
+	font-size: 1rem;
+	font-weight: bold;
+	color: #999;
+}
+.map-desc table tr td {
+	font-size: 1rem;
+	font-weight: bold;
+	color: #333;
 }

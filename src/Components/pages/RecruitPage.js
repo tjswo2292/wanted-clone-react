@@ -3,15 +3,24 @@ import "./recruitPage.css";
 
 const RecruitPage = () => {
 	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-		return () => {
-			window.removeEventListener("scroll", handleScroll); //clean up
-		};
-	}, []);
+		const { naver } = window;
 
-	const handleScroll = (e) => {
-		console.log(window.scrollY);
-	};
+		const location = new naver.maps.LatLng(
+			37.439312315764816,
+			126.86633442176422
+		);
+		// 지도에 표시할 위치의 위도와 경도 설정
+
+		const mapOptions = {
+			center: location,
+			// 중앙에 배치할 위치
+			zoom: 17,
+			// 확대 단계
+		};
+		const map = new naver.maps.Map("map", mapOptions);
+		// DOM 요소에 지도 삽입 (지도를 삽입할 HTML 요소의 id, 지도의 옵션 객체)
+	});
+
 	return (
 		<main>
 			<div className="main-container">
@@ -163,6 +172,24 @@ const RecruitPage = () => {
 							<li>MicroSoft Server</li>
 							<li>MSSQL</li>
 						</ul>
+					</div>
+					<hr className="skill-stack-list-bottom" />
+					<div className="map-desc">
+						<table>
+							<tbody>
+								<tr>
+									<th>마감일</th>
+									<td colSpan="9">상시</td>
+								</tr>
+								<tr>
+									<th>근무지역</th>
+									<td colSpan="9">
+										서울 강남구 테헤란로 104길 26 (수퍼트리타워)
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div id="map" />
 					</div>
 					<div className="company-follow">
 						<div className="company-follow-box">
