@@ -4,7 +4,7 @@ import "./signUpForm.css";
 
 const SignUpForm = () => {
 	const [emailInputValue, setEmailInptValue] = useState("");
-	const [validate, setValidate] = useState(true);
+	const [validate, setValidate] = useState("");
 	const [activeBtn, setActiveBtn] = useState(false);
 
 	const regExp =
@@ -23,7 +23,6 @@ const SignUpForm = () => {
 	function emailValueUpdate(e) {
 		setEmailInptValue(e.target.value);
 	}
-
 	return (
 		<div className="sign-up-form">
 			<div className="sign-up-title">
@@ -44,7 +43,9 @@ const SignUpForm = () => {
 					type="email"
 					placeholder="이메일을 입력해주세요."
 				/>
-				{!validate && (
+				{validate ? (
+					""
+				) : (
 					<span className="show-warning">올바른 이메일을 입력해주세요</span>
 				)}
 				<Link to="/newsignup">

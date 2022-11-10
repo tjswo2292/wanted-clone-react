@@ -1,8 +1,15 @@
+.header {
+	z-index: 99999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+}
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 66.25rem;
-  height: 3.125rem;
-  margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 66.25rem;
+	height: 3.125rem;
+	margin: 0 auto;
 }

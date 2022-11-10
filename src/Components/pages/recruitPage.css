@@ -1,23 +1,25 @@
 .main-container {
-	display: flex;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
 	width: 66.25rem;
 	margin: 0 auto;
+	margin-top: 4rem;
 }
-.main-container .apply-img {
+.main-container .apply-desc .apply-img-box {
 	width: 43.75rem;
-	height: 30.625rem;
-	border-radius: 0.25rem;
-}
-.main-container .apply-img .apply-img-box {
-	width: 42.125rem;
 	height: 29.438rem;
 }
-.main-container .apply-img .apply-img-box img {
+.main-container .apply-desc .apply-img-box img {
 	display: block;
 	width: inherit;
 	height: inherit;
 }
+.money-wrap {
+	height: inherit;
+}
 .money {
+	position: fixed;
+	top: 4rem;
 	width: 21.25rem;
 	height: 18.75rem;
 	padding: 1.25rem;
