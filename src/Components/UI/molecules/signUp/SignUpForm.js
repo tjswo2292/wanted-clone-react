@@ -4,22 +4,23 @@ import "./signUpForm.css";
 
 const SignUpForm = () => {
 	const [emailInputValue, setEmailInptValue] = useState("");
-	const [validate, setValidate] = useState("");
+	const [validate, setValidate] = useState(true);
 	const [activeBtn, setActiveBtn] = useState(false);
 
 	const regExp =
 		/^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{1,3}$/i;
 
 	useEffect(() => {
-		if (regExp.test(emailInputValue) === false) {
-			setValidate(false);
-			setActiveBtn(false);
-		} else {
+		if (regExp.test(emailInputValue) === true || emailInputValue === "") {
 			setValidate(true);
 			setActiveBtn(true);
+		} else {
+			setValidate(false);
+			setActiveBtn(false);
 		}
 	}, [emailInputValue]);
 
+	console.log(validate);
 	function emailValueUpdate(e) {
 		setEmailInptValue(e.target.value);
 	}
