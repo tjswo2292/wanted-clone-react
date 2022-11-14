@@ -55,7 +55,7 @@ const NewSignUpForm = () => {
 					type="text"
 					placeholder="인증번호를 입력해주세요"
 				/>
-				<label htmlFor="new-email">이메일</label>
+				<label htmlFor="new-email">비밀번호</label>
 				<input
 					id="new-pw-input"
 					type="number"
