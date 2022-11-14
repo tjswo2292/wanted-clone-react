@@ -37,6 +37,3 @@ const InsightList = () => {
 };
 
 export default InsightList;
-
-// img 30 30
-// aaa font 12 ml 10
