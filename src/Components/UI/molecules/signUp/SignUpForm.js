@@ -5,7 +5,7 @@ import "./signUpForm.css";
 const SignUpForm = () => {
 	const [emailInputValue, setEmailInptValue] = useState("");
 	const [validate, setValidate] = useState(true);
-	const [activeBtn, setActiveBtn] = useState(false);
+	const [activeBtn, setActiveBtn] = useState(true);
 
 	const regExp =
 		/^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{1,3}$/i;
@@ -18,12 +18,18 @@ const SignUpForm = () => {
 			setValidate(false);
 			setActiveBtn(false);
 		}
+		console.log(activeBtn);
 	}, [emailInputValue]);
 
-	console.log(validate);
 	function emailValueUpdate(e) {
 		setEmailInptValue(e.target.value);
 	}
+
+	function submitHandler() {
+		console.log("hi");
+		localStorage.setItem("userid", emailInputValue);
+	}
+
 	return (
 		<div className="sign-up-form">
 			<div className="sign-up-title">
@@ -55,6 +61,7 @@ const SignUpForm = () => {
 							id={activeBtn ? "loginPosible" : "emailSubmitBtn"}
 							type="submit"
 							disabled={!activeBtn}
+							onClick={submitHandler}
 						>
 							<span>이메일로 계속하기</span>
 						</button>
