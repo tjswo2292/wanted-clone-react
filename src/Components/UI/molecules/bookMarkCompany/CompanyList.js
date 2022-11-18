@@ -9,22 +9,28 @@ const PUBLIC_IMG = process.env.PUBLIC_URL;
 
 const CompanyList = ({ fill, onEmptyIcon, onFillIcon }) => {
 	return (
-		<>
-			<ul className="insight-list-container">
-				{InsightData.insightData.map((element) => (
-					<Link key={element.id} to="/recruit">
+		<ul className="insight-list-container">
+			{InsightData.insightData.map((element) => (
+				<div className="li-container" key={element.id}>
+					{fill ? (
+						<button
+							onClick={() => onEmptyIcon(element.id)}
+							className="bookmark-fill-icon"
+						>
+							<FaBookmark />
+						</button>
+					) : (
+						<button
+							onClick={() => onFillIcon(element.id)}
+							className="bookmark-icon"
+						>
+							<FaRegBookmark />
+						</button>
+					)}
+					<Link to="/recruit">
 						<li className="insight-list-item-container">
 							<div className="card-img-box">
 								<img src={PUBLIC_IMG + element.src} />
-								{fill ? (
-									<button onClick={onEmptyIcon} className="bookmark-fill-icon">
-										<FaBookmark />
-									</button>
-								) : (
-									<button onClick={onFillIcon} className="bookmark-icon">
-										<FaRegBookmark />
-									</button>
-								)}
 							</div>
 							<div className="card-title-box">
 								<span>{element.title}</span>
@@ -42,9 +48,9 @@ const CompanyList = ({ fill, onEmptyIcon, onFillIcon }) => {
 							</div>
 						</li>
 					</Link>
-				))}
-			</ul>
-		</>
+				</div>
+			))}
+		</ul>
 	);
 };
 

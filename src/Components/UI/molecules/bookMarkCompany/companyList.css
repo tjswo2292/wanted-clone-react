@@ -10,8 +10,10 @@
 	flex-wrap: wrap;
 	margin-top: 2.5rem;
 }
-.insight-list-container .insight-list-item-container {
+.li-container {
 	position: relative;
+}
+.insight-list-container .insight-list-item-container {
 	margin-bottom: 3.125rem;
 	width: var(--card-width);
 }

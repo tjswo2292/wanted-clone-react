@@ -7,8 +7,8 @@ const CompanyContainer = () => {
 
 	const fill = useSelector((state) => state.fill);
 
-	const onEmptyIcon = () => dispatch(emptyIcon());
-	const onFillIcon = () => dispatch(fillIcon());
+	const onEmptyIcon = (id) => dispatch(emptyIcon(id));
+	const onFillIcon = (id) => dispatch(fillIcon(id));
 
 	console.log(fill);
 
