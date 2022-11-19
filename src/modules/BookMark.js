@@ -3,6 +3,7 @@ const EMPTY_ICON = "EMPTY_ICON";
 
 export const emptyIcon = (id) => ({
 	type: EMPTY_ICON,
+	fill: state.fill.includes(id) ? 
 	id,
 });
 export const fillIcon = (id) => ({
@@ -22,7 +23,7 @@ export default function markReducer(state = initialState, action) {
 			};
 		case EMPTY_ICON:
 			return {
-				fill: ,
+				fill: [...state.fill, action.id],
 			};
 		default:
 			return state;
@@ -31,4 +32,4 @@ export default function markReducer(state = initialState, action) {
 
 // 배열에 id 값이 없으면 북마크 icon을 비워라
 // reducer에서 할거는 id 값알 뺴거나 추가해주기
-// 배열의 id 값에 따라 true false는 companyCounter에서 
+// 배열의 id 값에 따라 true false는 companyCounter에서
