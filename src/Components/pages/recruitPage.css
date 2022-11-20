@@ -11,7 +11,7 @@
 }
 .main-container .apply-desc .apply-img-box img {
 	display: block;
-	width: inherit;
+	width: 100%;
 	height: inherit;
 }
 .money-wrap {
@@ -220,4 +220,10 @@
 	font-size: 1rem;
 	font-weight: bold;
 	color: #333;
+}
+
+@media (max-width: 992px) {
+	.apply-desc {
+		width: 70vmin;
+	}
 }
