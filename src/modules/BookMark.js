@@ -1,9 +1,9 @@
 const FILL_ICON = "FILL_ICON";
 const EMPTY_ICON = "EMPTY_ICON";
 
+// action creator, 이 action이 실행 될 때, 어떤 값을 넘길 것인지
 export const emptyIcon = (id) => ({
 	type: EMPTY_ICON,
-	fill: state.fill.includes(id) ? 
 	id,
 });
 export const fillIcon = (id) => ({
@@ -11,25 +11,29 @@ export const fillIcon = (id) => ({
 	id,
 });
 
+// 초기값
 const initialState = {
-	fill: [],
+	markArr: [],
+	fill: false,
 };
 
+// reducer 함수
 export default function markReducer(state = initialState, action) {
 	switch (action.type) {
 		case FILL_ICON:
 			return {
-				fill: [...state.fill, action.id],
+				markArr: [...state.markArr, action.id],
+				fill: !state.markArr.includes(action.id),
 			};
 		case EMPTY_ICON:
 			return {
-				fill: [...state.fill, action.id],
+				markArr: [...state.markArr, action.id],
+				fill: state.markArr.includes(action.id),
 			};
 		default:
 			return state;
 	}
 }
 
-// 배열에 id 값이 없으면 북마크 icon을 비워라
-// reducer에서 할거는 id 값알 뺴거나 추가해주기
-// 배열의 id 값에 따라 true false는 companyCounter에서
+// fill: boolean
+// id를 저장 할 배열

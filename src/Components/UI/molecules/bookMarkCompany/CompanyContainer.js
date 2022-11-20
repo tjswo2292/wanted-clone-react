@@ -6,11 +6,12 @@ const CompanyContainer = () => {
 	const dispatch = useDispatch();
 
 	const fill = useSelector((state) => state.fill);
+	const markArr = useSelector((state) => state.markArr);
 
 	const onEmptyIcon = (id) => dispatch(emptyIcon(id));
 	const onFillIcon = (id) => dispatch(fillIcon(id));
 
-	console.log(fill);
+	console.log(markArr);
 
 	return (
 		<CompanyList

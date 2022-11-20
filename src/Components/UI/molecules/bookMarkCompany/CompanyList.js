@@ -14,14 +14,14 @@ const CompanyList = ({ fill, onEmptyIcon, onFillIcon }) => {
 				<div className="li-container" key={element.id}>
 					{fill ? (
 						<button
-							onClick={() => onEmptyIcon(element.id)}
+							onClick={() => onFillIcon(element.id)}
 							className="bookmark-fill-icon"
 						>
 							<FaBookmark />
 						</button>
 					) : (
 						<button
-							onClick={() => onFillIcon(element.id)}
+							onClick={() => onEmptyIcon(element.id)}
 							className="bookmark-icon"
 						>
 							<FaRegBookmark />
