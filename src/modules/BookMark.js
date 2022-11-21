@@ -14,7 +14,6 @@ export const fillIcon = (id) => ({
 // 초기값
 const initialState = {
 	markArr: [],
-	fill: false,
 };
 
 // reducer 함수
@@ -23,12 +22,10 @@ export default function markReducer(state = initialState, action) {
 		case FILL_ICON:
 			return {
 				markArr: [...state.markArr, action.id],
-				fill: !state.markArr.includes(action.id),
 			};
 		case EMPTY_ICON:
 			return {
-				markArr: [...state.markArr, action.id],
-				fill: state.markArr.includes(action.id),
+				markArr: state.markArr.filter((element) => element !== action.id),
 			};
 		default:
 			return state;
@@ -36,4 +33,3 @@ export default function markReducer(state = initialState, action) {
 }
 
 // fill: boolean
-// id를 저장 할 배열

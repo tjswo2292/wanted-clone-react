@@ -7,21 +7,21 @@ import { FaRegBookmark, FaBookmark } from "react-icons/fa";
 
 const PUBLIC_IMG = process.env.PUBLIC_URL;
 
-const CompanyList = ({ fill, onEmptyIcon, onFillIcon }) => {
+const CompanyList = ({ markArr, onEmptyIcon, onFillIcon }) => {
 	return (
 		<ul className="insight-list-container">
 			{InsightData.insightData.map((element) => (
 				<div className="li-container" key={element.id}>
-					{fill ? (
+					{markArr.includes(element.id) ? (
 						<button
-							onClick={() => onFillIcon(element.id)}
+							onClick={() => onEmptyIcon(element.id)}
 							className="bookmark-fill-icon"
 						>
 							<FaBookmark />
 						</button>
 					) : (
 						<button
-							onClick={() => onEmptyIcon(element.id)}
+							onClick={() => onFillIcon(element.id)}
 							className="bookmark-icon"
 						>
 							<FaRegBookmark />

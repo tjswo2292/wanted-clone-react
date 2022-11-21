@@ -5,7 +5,6 @@ import { emptyIcon, fillIcon } from "../../../../modules/BookMark";
 const CompanyContainer = () => {
 	const dispatch = useDispatch();
 
-	const fill = useSelector((state) => state.fill);
 	const markArr = useSelector((state) => state.markArr);
 
 	const onEmptyIcon = (id) => dispatch(emptyIcon(id));
@@ -15,7 +14,7 @@ const CompanyContainer = () => {
 
 	return (
 		<CompanyList
-			fill={fill}
+			markArr={markArr}
 			onEmptyIcon={onEmptyIcon}
 			onFillIcon={onFillIcon}
 		/>
