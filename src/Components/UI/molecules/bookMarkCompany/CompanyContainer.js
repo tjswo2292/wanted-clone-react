@@ -10,8 +10,6 @@ const CompanyContainer = () => {
 	const onEmptyIcon = (id) => dispatch(emptyIcon(id));
 	const onFillIcon = (id) => dispatch(fillIcon(id));
 
-	console.log(markArr);
-
 	return (
 		<CompanyList
 			markArr={markArr}

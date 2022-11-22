@@ -1,13 +1,17 @@
 const FILL_ICON = "FILL_ICON";
 const EMPTY_ICON = "EMPTY_ICON";
+const DELETE_BOOKMARK = "DELETE_BOOKMARK";
 
-// action creator, 이 action이 실행 될 때, 어떤 값을 넘길 것인지
 export const emptyIcon = (id) => ({
 	type: EMPTY_ICON,
 	id,
 });
 export const fillIcon = (id) => ({
 	type: FILL_ICON,
+	id,
+});
+export const delBookMark = (id) => ({
+	type: DELETE_BOOKMARK,
 	id,
 });
 
@@ -27,9 +31,14 @@ export default function markReducer(state = initialState, action) {
 			return {
 				markArr: state.markArr.filter((element) => element !== action.id),
 			};
+		case DELETE_BOOKMARK:
+			return {
+				markArr: state.markArr.filter((element) => element !== action.id),
+			};
 		default:
 			return state;
 	}
 }
 
-// fill: boolean
+// json 파일에 있는 id 값만 렌더링?
+//
