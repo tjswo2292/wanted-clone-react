@@ -11,6 +11,7 @@ import NewSignUpPage from "./Components/pages/NewSignUpPage";
 import RecruitPage from "./Components/pages/RecruitPage";
 
 import Header from "./Components/UI/organisms/Header";
+import SaveBookMark from "./Components/pages/SaveBookMark";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -46,6 +47,7 @@ function App() {
 					<Route path="" element={<MainPage />} />
 					<Route path="jobposting" element={<JobPosting />} />
 					<Route path="recruit" element={<RecruitPage />} />
+					<Route path="savebookmark" element={<SaveBookMark />} />
 				</Route>
 				<Route path="/newsignup" element={<NewSignUpPage />} />
 				<Route path="/signup" element={<SignUpPage />} />

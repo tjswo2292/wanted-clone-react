@@ -4,7 +4,7 @@ import InsightData from "../../../../Data/InsightData.json";
 
 import "./insightList.css";
 
-const PUBLIC_IMG = process.env.PUBLIC_URL;
+export const PUBLIC_IMG = process.env.PUBLIC_URL;
 
 const InsightList = () => {
 	return (

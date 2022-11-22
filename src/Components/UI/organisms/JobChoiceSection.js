@@ -5,13 +5,16 @@ import JobSkill from "../molecules/jobChoice/JobSkill";
 import "./jobChoiceSection.css";
 
 const JobChoiceSection = () => {
-  return (
-    <section className="job-choice-section">
-      <JobDetail />
-      <JobSkill />
-      <JobDetailCategory />
-    </section>
-  );
+	return (
+		<>
+			<section className="job-choice-section">
+				<JobDetail />
+				<JobSkill />
+				<JobDetailCategory />
+			</section>
+			<hr className="hr" />
+		</>
+	);
 };
 
 export default JobChoiceSection;
